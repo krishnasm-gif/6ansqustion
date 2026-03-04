@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>English Literature SA-2 Model Paper | Class 6</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c5282;
+      --primary-dark: #1e3a5f;
+      --accent: #ed8936;
+      --light: #f7fafc;
+      --dark: #2d3748;
+      --gray: #718096;
+      --success: #38a169;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+      color: var(--dark);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      padding: 70px 40px 45px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.08" d="M0,128L60,149.3C120,171,240,213,360,213.3C480,213,600,171,720,144C840,117,960,107,1080,112C1200,117,1320,139,1380,149.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>') bottom no-repeat;
+      background-size: cover;
+      opacity: 0.9;
+    }
+
+    .school-name { font-family: 'Playfair Display', serif; font-size: 2.9rem; margin-bottom: 14px; letter-spacing: 1.2px; }
+    .title { font-size: 2.2rem; font-weight: 500; margin-bottom: 10px; }
+    .subtitle { font-size: 1.35rem; opacity: 0.92; font-weight: 300; }
+
+    .content { padding: 45px; }
+
+    .instructions {
+      background: #fefcbf;
+      border-left: 6px solid var(--accent);
+      padding: 22px 26px;
+      margin: 35px 0;
+      border-radius: 10px;
+      font-weight: 500;
+      color: #744210;
+    }
+
+    section { margin-bottom: 55px; }
+
+    h2 {
+      color: var(--primary);
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 22px;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 12px;
+      display: inline-block;
+    }
+
+    h3 { color: var(--primary-dark); font-size: 1.55rem; margin: 40px 0 18px; }
+
+    .question {
+      margin-bottom: 30px;
+      padding-left: 50px;
+      position: relative;
+    }
+
+    .question-number {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      font-weight: bold;
+      color: var(--primary);
+      font-size: 1.45rem;
+      width: 42px;
+      text-align: right;
+    }
+
+    .mcq-options {
+      margin-top: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+
+    .option {
+      padding: 13px 19px;
+      background: #f7fafc;
+      border-radius: 10px;
+      transition: all 0.25s;
+      border: 1px solid #e2e8f0;
+    }
+
+    .option:hover {
+      background: #edf2f7;
+      transform: translateX(8px);
+      box-shadow: 0 5px 14px rgba(0,0,0,0.09);
+    }
+
+    .correct {
+      background: #e6fffa;
+      border-left: 6px solid #319795;
+      font-weight: 500;
+    }
+
+    .extract {
+      background: #f0fff4;
+      padding: 26px;
+      border-radius: 14px;
+      border: 1px solid #c6f6d5;
+      margin: 28px 0;
+      font-style: italic;
+      line-height: 1.75;
+    }
+
+    .extract strong { color: var(--success); font-style: normal; }
+
+    .match-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-size: 1.08rem;
+    }
+
+    .match-table th, .match-table td {
+      padding: 18px 22px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .match-table th {
+      background: var(--primary);
+      color: white;
+      font-weight: 500;
+    }
+
+    .match-table tr:nth-child(even) { background: #f9fbfd; }
+
+    .fill-blanks {
+      margin-top: 28px;
+      font-size: 1.12rem;
+    }
+
+    .blank {
+      display: inline-block;
+      width: 170px;
+      height: 38px;
+      background: #fffaf0;
+      border-bottom: 3px dashed var(--accent);
+      margin: 0 12px;
+      text-align: center;
+      vertical-align: middle;
+      font-weight: bold;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .footer-note {
+      text-align: center;
+      margin-top: 80px;
+      color: var(--gray);
+      font-style: italic;
+      padding: 45px 0 35px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 1.15rem;
+    }
+
+    @media (max-width: 768px) {
+      .header { padding: 55px 25px 35px; }
+      .school-name { font-size: 2.4rem; }
+      .title { font-size: 1.9rem; }
+      .content { padding: 35px 22px; }
+      .question { padding-left: 42px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <div class="school-name">St. Joseph Chaminade Academy (ICSE)</div>
+    <div class="title">Class: 6th Grade</div>
+    <div class="subtitle">English Literature – SA-2 Model / Revision Paper</div>
+    <div style="margin-top:26px; font-size:1.55rem; font-weight:500;">Total Marks: 60</div>
+  </div>
+
+  <div class="content">
+
+    <div class="instructions">
+      <strong>Instructions:</strong><br>
+      • Attempt <strong>all</strong> questions from Section A.<br>
+      • Attempt <strong>any 10</strong> questions from Section B.<br>
+      • Attempt <strong>any 4</strong> extracts from Section C.<br>
+      • Attempt <strong>all</strong> questions from Section D.
+    </div>
+
+    <!-- SECTION A – Fresh MCQs -->
+    <section>
+      <h2>Section A – Multiple Choice Questions</h2>
+      <p style="font-weight:500; margin-bottom:26px; color:#4a5568;">(10 × 1 = 10 Marks) – Select the correct choice</p>
+
+      <div class="question">
+        <span class="question-number">1.</span>
+        According to "Saving the Tiger", which factor has most severely reduced tiger numbers in India?
+        <div class="mcq-options">
+          <div class="option">a) Forest fires</div>
+          <div class="option correct">b) Illegal hunting and shrinking habitat</div>
+          <div class="option">c) Attacks by other predators</div>
+          <div class="option">d) Changes in rainfall patterns</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">2.</span>
+        What does the poet celebrate in "After the Storm" the morning following the rain?
+        <div class="mcq-options">
+          <div class="option">a) Calm silence everywhere</div>
+          <div class="option correct">b) Sunlight, fresh air, and singing birds</div>
+          <div class="option">c) Lingering dark clouds</div>
+          <div class="option">d) Wet mud and cold wind</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">3.</span>
+        In "Mr. Young's Car", the children compare the car to what?
+        <div class="mcq-options">
+          <div class="option">a) A giant monster truck</div>
+          <div class="option correct">b) A tiny box on wheels or a convertible</div>
+          <div class="option">c) A shiny rocket</div>
+          <div class="option">d) An antique horse cart</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">4.</span>
+        The story "A New Name" shows Korean children being forced to adopt Japanese names due to:
+        <div class="mcq-options">
+          <div class="option">a) School competition rules</div>
+          <div class="option correct">b) Colonial policies under Japanese occupation</div>
+          <div class="option">c) Family renaming ceremony</div>
+          <div class="option">d) To simplify attendance registers</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">5.</span>
+        In "Four Little Foxes", the cubs become orphans because:
+        <div class="mcq-options">
+          <div class="option">a) Their mother abandoned them</div>
+          <div class="option correct">b) A hunter killed their mother</div>
+          <div class="option">c) A landslide destroyed the den</div>
+          <div class="option">d) They were caught in a trap</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">6.</span>
+        Professor Shonku’s invention in "Corvus" is called:
+        <div class="mcq-options">
+          <div class="option">a) AviSpeak device</div>
+          <div class="option correct">b) Ornithon</div>
+          <div class="option">c) CrowMind trainer</div>
+          <div class="option">d) BirdVoice machine</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">7.</span>
+        Savushkin is always late because he:
+        <div class="mcq-options">
+          <div class="option">a) Helps his grandmother</div>
+          <div class="option correct">b) Stops to marvel at the winter oak</div>
+          <div class="option">c) Takes a longer route</div>
+          <div class="option">d) Forgets the time</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">8.</span>
+        In "Past, Present, Future", the child compares the future to:
+        <div class="mcq-options">
+          <div class="option">a) A quiet lake at dusk</div>
+          <div class="option correct">b) A mighty sea under a cloudless sun</div>
+          <div class="option">c) A fading rose</div>
+          <div class="option">d) A snowy mountain</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">9.</span>
+        The author first encountered a tiger in the wild when he was:
+        <div class="mcq-options">
+          <div class="option">a) Ten years old</div>
+          <div class="option correct">b) Nineteen</div>
+          <div class="option">c) On a family vacation</div>
+          <div class="option">d) During college</div>
+        </div>
+      </div>
+
+      <div class="question">
+        <span class="question-number">10.</span>
+        When the car arrived in "Mr. Young's Car", the children were:
+        <div class="mcq-options">
+          <div class="option">a) Afraid of the noise</div>
+          <div class="option correct">b) Bursting with excitement for rides</div>
+          <div class="option">c) Disappointed with the size</div>
+          <div class="option">d) Busy doing homework</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION B – All new phrasing -->
+    <section>
+      <h2>Section B – Short Answer Questions</h2>
+      <p style="font-weight:500; margin-bottom:26px; color:#4a5568;">(Attempt any 10 out of 12)  (10 × 2 = 20 Marks)<br>Answer each in 2–3 sentences.</p>
+
+      <div class="question"><span class="question-number">1.</span> Explain why poachers hunt tigers and why protected areas like sanctuaries become their targets.</div>
+      <div class="question"><span class="question-number">2.</span> In "After the Storm", what living things does the poet mention are now enjoying the sunshine? Why are they happy?</div>
+      <div class="question"><span class="question-number">3.</span> Quote the line from "Four Little Foxes" that shows the cubs mistook the poet for their mother. Why did this happen?</div>
+      <div class="question"><span class="question-number">4.</span> Describe the situation when Onishi san made the sound “Ah” in his throat. What emotion was he expressing?</div>
+      <div class="question"><span class="question-number">5.</span> According to the poem, what did the four little foxes witness happening to their mother? Where did she disappear to?</div>
+      <div class="question"><span class="question-number">6.</span> In "Corvus", how did Shonku’s purpose for the crow differ from Argus’s plan? Explain briefly.</div>
+      <div class="question"><span class="question-number">7.</span> What surprising truth about Savushkin did Anna Vasilyevna discover when she visited the oak tree?</div>
+      <div class="question"><span class="question-number">8.</span> What kind of morning does Anna Vasilyevna believe makes a good school day? Why was she upset in the beginning?</div>
+      <div class="question"><span class="question-number">9.</span> How would you describe the children’s experience during the car ride in "Mr. Young's Car"? Support your answer.</div>
+      <div class="question"><span class="question-number">10.</span> Explain how the night’s rain made the morning scene more lovely in "After the Storm".</div>
+      <div class="question"><span class="question-number">11.</span> Name some successful tiger reserves in India. What efforts helped increase tiger numbers there?</div>
+      <div class="question"><span class="question-number">12.</span> Why did Anna Vasilyevna doubt Savushkin’s explanation for being late? What did she plan to check?</div>
+    </section>
+
+    <!-- SECTION C – Completely new extracts & questions -->
+    <section>
+      <h2>Section C – Extract-Based Questions</h2>
+      <p style="font-weight:500; margin-bottom:26px; color:#4a5568;">(Attempt any 4 out of 6)  (4 × 5 = 20 Marks)</p>
+
+      <div class="extract">
+        <strong>Extract 1:</strong> Everyone jumped with joy and clapped their hands loudly.
+        <div style="margin-top:18px; color:#2d3748;">
+          a) What exciting event caused this reaction? <span style="color:var(--accent); font-weight:600;">(1 mark)</span><br>
+          b) Describe how the family showed their happiness. <span style="color:var(--accent); font-weight:600;">(2 marks)</span><br>
+          c) Apart from the main event, what else made this occasion special? <span style="color:var(--accent); font-weight:600;">(2 marks)</span>
+        </div>
+      </div>
+
+      <div class="extract">
+        <strong>Extract 2:</strong> “The birds are singing as if their hearts would break with gladness.”
+        <div style="margin-top:18px; color:#2d3748;">
+          a) What are the birds doing and how does the poet describe their singing? <span style="color:var(--accent); font-weight:600;">(2 marks)</span><br>
+          b) How does this line reflect the overall mood of nature after the storm? <span style="color:var(--accent); font-weight:600;">(3 marks)</span>
+        </div>
+      </div>
+
+      <div class="extract">
+        <strong>Extract 3:</strong> “Intelligence should bring kindness, not cruelty.”
+        <div style="margin-top:18px; color:#2d3748;">
+          a) Who says this and in what context? <span style="color:var(--accent); font-weight:600;">(1 mark)</span><br>
+          b) What value does the speaker emphasize here? <span style="color:var(--accent); font-weight:600;">(2 marks)</span><br>
+          c) How does this idea shape the story’s conclusion? <span style="color:var(--accent); font-weight:600;">(2 marks)</span>
+        </div>
+      </div>
+
+      <div class="extract">
+        <strong>Extract 4:</strong> The teacher paused, her eyes wide, gazing at the tall, silent tree. (Para 41)
+        <div style="margin-top:18px; color:#2d3748;">
+          a) Who paused and which tree captured her attention? <span style="color:var(--accent); font-weight:600;">(2 marks)</span><br>
+          b) What realization do you think came to her at that moment? Support with story details. <span style="color:var(--accent); font-weight:600;">(3 marks)</span>
+        </div>
+      </div>
+
+      <div class="extract">
+        <strong>Extract 5:</strong> Lost in wonder, she forgot to scold the boy standing quietly ahead.
+        <div style="margin-top:18px; color:#2d3748;">
+          a) Who got lost in wonder and what caused it? <span style="color:var(--accent); font-weight:600;">(2 marks)</span><br>
+          b) How does this moment confirm that Savushkin had been honest all along? <span style="color:var(--accent); font-weight:600;">(3 marks)</span>
+        </div>
+      </div>
+
+      <div class="extract">
+        <strong>Extract 6:</strong> We must protect the tiger to save the forests and all the creatures that live there.
+        <div style="margin-top:18px; color:#2d3748;">
+          a) Why is the tiger considered so important in India? <span style="color:var(--accent); font-weight:600;">(1 mark)</span><br>
+          b) How does protecting tigers help the entire ecosystem? <span style="color:var(--accent); font-weight:600;">(2 marks)</span><br>
+          c) List two major dangers tigers currently face. <span style="color:var(--accent); font-weight:600;">(2 marks)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D – Completely new match & blanks -->
+    <section>
+      <h2>Section D</h2>
+
+      <h3>1. Match the Following (5 Marks)</h3>
+      <p style="margin-bottom:18px; color:#4a5568;">Match each item in Column A with the correct description in Column B. (1 mark each)</p>
+      <table class="match-table">
+        <tr><th>Column A</th><th>Column B</th></tr>
+        <tr><td>1. Project Tiger</td><td></td></tr>
+        <tr><td>2. Ornithon</td><td></td></tr>
+        <tr><td>3. Onishi san</td><td></td></tr>
+        <tr><td>4. Winter Oak</td><td></td></tr>
+        <tr><td>5. Mr. Young's Car</td><td></td></tr>
+      </table>
+
+      <div style="margin:24px 0; font-size:0.98rem; color:#718096;">
+        (Column B options: a) Teacher learns lesson from a tree  b) Old man reacts with “Ah” sound  c) Family gets excited over new vehicle  d) India’s major tiger conservation effort  e) Machine that made a crow intelligent)
+      </div>
+
+      <h3>2. Fill in the Blanks (5 × 1 = 5 Marks)</h3>
+      <div class="fill-blanks">
+        1. In "Saving the Tiger", the author saw his first wild tiger at the age of <span class="blank">_____</span>. (nine / nineteen)<br><br>
+
+        2. The poem "Past, Present, Future" was written by <span class="blank">_____</span>. (Christina Rossetti / William Wordsworth)<br><br>
+
+        3. In "Four Little Foxes", the poet pleads with <span class="blank">_____</span> to leave the cubs unharmed. (hunters / spring)<br><br>
+
+        4. Savushkin was always late because of the beautiful <span class="blank">_____</span> oak. (summer / winter)<br><br>
+
+        5. Professor Shonku used the <span class="blank">_____</span> to make Corvus speak. (Ornithon / Radio)
+      </div>
+    </section>
+
+    <div class="footer-note">
+      Good luck with your studies! Pay close attention to the characters’ feelings, nature’s beauty, and the important messages in each piece — they hold the key to great answers.
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
